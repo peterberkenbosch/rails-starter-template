@@ -171,6 +171,7 @@ GEM
       thor (~> 1.0)
     rainbow (3.0.0)
     rake (13.0.5)
+    redis (4.3.1)
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rspec-core (3.10.1)
@@ -272,6 +273,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 5.0)
   rails (~> 6.1.4)
+  redis (~> 4.0)
   rspec-rails
   sass-rails (>= 6)
   selenium-webdriver
