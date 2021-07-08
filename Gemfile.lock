@@ -141,8 +141,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-mini-profiler (2.3.2)
-      rack (>= 1.2.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.4)
@@ -273,7 +271,6 @@ DEPENDENCIES
   pg (~> 1.1)
   pry-rails
   puma (~> 5.0)
-  rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4)
   rspec-rails
   sass-rails (>= 6)
