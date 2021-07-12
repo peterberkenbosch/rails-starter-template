@@ -14,7 +14,11 @@
     <%= yield :head %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="h-full font-sans antialiased font-normal leading-normal bg-gray-100">
+    <div class="main">      
+      <div class="px-3 lg:px-0">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
