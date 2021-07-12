@@ -1,24 +1,37 @@
-Capybara.register_driver :chrome_headless do |app|
-  chrome_capabilities = ::Selenium::WebDriver::Remote::Capabilities.chrome("goog:chromeOptions" => {args: %w[no-sandbox headless disable-gpu window-size=1400,1400]})
+# frozen_string_literal: true
 
-  if ENV["CHROME"]
+require "capybara/rspec"
+
+Capybara.server = :puma, {Silent: true}
+
+Capybara.register_driver :chrome_headless do |app|
+  options = ::Selenium::WebDriver::Chrome::Options.new
+  options.add_argument("--no-sandbox")
+  options.add_argument("--headless")
+  options.add_argument("--disable-gpu")
+  options.add_argument("--window-size=2800,2800")
+
+  if ENV["CHROME_URL"]
     Capybara::Selenium::Driver.new(app,
       browser: :remote,
-      url: ENV["CHROME"],
-      desired_capabilities: chrome_capabilities)
+      url: ENV["CHROME_URL"],
+      options: options)
   else
+    require "webdrivers"
     Capybara::Selenium::Driver.new(app,
       browser: :chrome,
-      desired_capabilities: chrome_capabilities)
+      options: options)
   end
 end
 
 RSpec.configure do |config|
-  config.before(:each, type: :system) do
+  config.before(:each, type: :system) {
     driven_by :chrome_headless
 
-    Capybara.app_host = "http://#{IPSocket.getaddress(Socket.gethostname)}:3000"
-    Capybara.server_host = IPSocket.getaddress(Socket.gethostname)
+    capybara_host = IPSocket.getaddress(Socket.gethostname)
+
+    Capybara.app_host = "http://#{capybara_host}:3000"
+    Capybara.server_host = capybara_host
     Capybara.server_port = 3000
-  end
+  }
 end

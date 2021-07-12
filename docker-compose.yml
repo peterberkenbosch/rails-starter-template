@@ -38,7 +38,6 @@ x-backend: &backend
     HISTFILE: /app/log/.bash_history
     PSQL_HISTFILE: /app/log/.psql_history
     EDITOR: vi
-    CAPYBARA_DRIVER: selenium_chrome_headless_docker_friendly
   depends_on: &backend_depends_on
     postgres:
       condition: service_healthy
