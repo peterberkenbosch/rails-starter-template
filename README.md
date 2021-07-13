@@ -1,46 +1,5 @@
 # APP NAME
 
-## Running the specs
-
-After a clean provisioning, before you can run the specs, you will have setup the test database like so:
-
-```sh
-$ bundle exec rails db:test:prepare
-```
-
-When using the Docker setup with Dip we have specify the RAILS_ENV like so:
-
-```sh
-$ RAILS_ENV=test dip bundle exec rails db:test:prepare
-```
-
-You can then run the specs:
-
-```sh
-$ bundle exec rspec
-```
-
-Inside the docker container we have 2 different commands. To just run the unit tests:
-
-```sh
-$ dip rspec
-```
-
-and to just run the system specs:
-
-```sh
-$ dip rspec system
-```
-
-## Code Guidelines
-
-An optional (but highly recommended) pre-commit git hook template is provided as part of the codebase.
-
-It uses [StandardRB](https://github.com/testdouble/standard) to automatically fix code style offenses. Install it in your local repo with:
-
-```sh
-$ cp git-hooks/pre-commit .git/hooks/pre-commit && chmod a+x .git/hooks/pre-commit
-```
 ## Provisioning and Interacting with Docker and dip
 
 You need `docker` and `docker-compose` installed (for MacOS just use [official app](https://docs.docker.com/engine/installation/mac/)).
@@ -55,7 +14,7 @@ To install dip, copy and run the command below. More installation options are fo
 $ gem install dip
 ```
 
-NOTE: If needed, install the correct version of ruby locally. The current version is listed at the top of the Gemfile but should also be automatically recognized by your shell. For example, at its current version, if you're using rbenv, run: `rbenv install 3.0.0`
+NOTE: If needed, install the correct version of ruby locally. The current version is listed at the top of the Gemfile but should also be automatically recognized by your shell. For example, at its current version, if you're using rbenv, run: `rbenv install 3.0.1`
 
 ### App Installation (dip)
 
@@ -78,25 +37,64 @@ $ dip rails s
 $ dip rails c
 ```
 
-## Provisioning and Interacting with docker-compose
+## Code Guidelines
 
-### Alternate App Installation
-
-Since dip uses docker-compose under the hood, everything is already configured; you can also use the following commands to prepare your Docker dev env:
-NOTE: These commands are essentially instead of `dip provision`.
+It uses [StandardRB](https://github.com/testdouble/standard) to automatically fix code style offenses.
 
 ```sh
-$ docker-compose build
-$ docker-compose run runner yarn install
-$ docker-compose run runner ./bin/setup
+dip standard
 ```
 
-This builds the Docker image, installs Ruby and NodeJS dependencies, creates database, run migrations and seeds.
-
-### docker-compose Commands
-
-You can run the Rails app using the following command:
+to automatically format the code with standard you can run:
 
 ```sh
-$ docker-compose up rails
+dip standard --fix
+```
+
+## Running the specs
+
+After a clean provisioning, before you can run the specs, you will have setup the test database like so:
+
+When using the Docker setup with Dip we have specify the RAILS_ENV like so:
+
+```sh
+$ dip bundle exec rails db:test:prepare RAILS_ENV=test
+```
+
+Inside the docker container we have 2 different commands. To just run the unit tests:
+
+```sh
+$ dip rspec
+```
+
+and to just run the system specs:
+
+```sh
+$ dip rspec system
+```
+
+## Adding javascript libraries
+
+Since we are using [grundler](https://github.com/johanhalse/grundler) (and not webpacker 🎉), we need to use the imnportmap provided by [stimulus-rails](https://github.com/hotwired/stimulus-rails) (This is installed through the [hotwire-rails](https://github.com/hotwired/hotwire-rails) gem.)
+
+Grundler is configured to store all packages in the `app/assets/javascripts/libraries` folder. This way these libraries are automaticly picked up by the importmap.
+
+For example to use the `confetti` package we can do the following:
+
+```sh
+bundle exec grundle add canvas-confetti
+```
+
+Then in a stimulus controller add the following:
+
+```js
+import confetti from 'canvas-confetti'
+```
+
+we can now execute the `confetti()` function on our stimulus controller, for example on the connect:
+
+```js
+connect(){
+  confetti();
+}
 ```
