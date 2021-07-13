@@ -56,3 +56,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "strong_migrations"
 gem "tailwindcss-rails"
 gem "hotwire-rails"
+gem "grundler"
