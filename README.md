@@ -75,7 +75,7 @@ $ dip rspec system
 
 ## Adding javascript libraries
 
-Since we are using [grundler](https://github.com/johanhalse/grundler) (and not webpacker 🎉), we need to use the imnportmap provided by [stimulus-rails](https://github.com/hotwired/stimulus-rails) (This is installed through the [hotwire-rails](https://github.com/hotwired/hotwire-rails) gem.)
+Since we are using [grundler](https://github.com/johanhalse/grundler) (and not webpacker 🎉), we need to use the importmap provided by [stimulus-rails](https://github.com/hotwired/stimulus-rails) (This is installed through the [hotwire-rails](https://github.com/hotwired/hotwire-rails) gem.)
 
 Grundler is configured to store all packages in the `app/assets/javascripts/libraries` folder. This way these libraries are automaticly picked up by the importmap.
 
