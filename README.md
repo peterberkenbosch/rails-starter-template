@@ -1,5 +1,9 @@
 # APP NAME
 
+Opiniated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec. 
+
+This comes with a full docker setup for local development including system specs that can run on M1 Apple Docker instances (and also without docker).
+
 ## Provisioning and Interacting with Docker and dip
 
 You need `docker` and `docker-compose` installed (for MacOS just use [official app](https://docs.docker.com/engine/installation/mac/)).
