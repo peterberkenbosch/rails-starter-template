@@ -1,6 +1,6 @@
 # APP NAME
 
-Opiniated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec. 
+Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
 This comes with a full docker setup for local development including system specs that can run on M1 Apple Docker instances (and also without docker).
 
