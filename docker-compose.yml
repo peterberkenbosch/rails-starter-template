@@ -8,12 +8,11 @@ x-app: &app
       RUBY_VERSION: '3.0.2'
       PG_MAJOR: '13'
       NODE_MAJOR: '16'
-      YARN_VERSION: '1.22.5'
       BUNDLER_VERSION: '2.2.20'
   environment: &env
     NODE_ENV: development
     RAILS_ENV: ${RAILS_ENV:-development}
-  image: x-app-dev:2.0.0
+  image: x-app-dev:2.0.2
   tmpfs:
     - /tmp
 

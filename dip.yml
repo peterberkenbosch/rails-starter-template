@@ -59,11 +59,6 @@ interaction:
     description: Run StandardRb commands
     service: rails
     command: bundle exec standardrb
-  
-  yarn:
-    service: rails
-    command: yarn
-    compose_run_options: [no-deps]
 
   psql:
     service: postgres
