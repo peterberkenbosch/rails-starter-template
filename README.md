@@ -92,7 +92,7 @@ bundle exec grundle add canvas-confetti
 Then in a stimulus controller add the following:
 
 ```js
-import confetti from 'canvas-confetti'
+import confetti from 'libraries/canvas-confetti'
 ```
 
 we can now execute the `confetti()` function on our stimulus controller, for example on the connect:
