@@ -8,10 +8,9 @@
 
     <%= stylesheet_link_tag "inter-font" %>
     <%= stylesheet_link_tag "tailwind" %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= stimulus_include_tags %>
-    <%= javascript_include_tag "turbo", type: "module-shim" %>
-    <%= yield :head %>
+    <%= stylesheet_link_tag 'application', data: {turbolinks_track: true} %>    
+    <%= javascript_importmap_tags %>
+    <%= yield :head %>    
   </head>
 
   <body class="h-full font-sans antialiased font-normal leading-normal bg-gray-100">

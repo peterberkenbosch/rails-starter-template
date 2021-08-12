@@ -1,4 +1,5 @@
 {
-  "dependencies": {},
+  "dependencies": {
+  },
   "nodulePath": "./app/assets/javascripts/libraries"
 }
