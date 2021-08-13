@@ -77,6 +77,30 @@ and to just run the system specs:
 $ dip rspec system
 ```
 
+## Running Tailwind JIT
+
+To use the JIT tailwind we have to run a seperate console and run:
+
+```sh
+$ dip npm start
+```
+
+The output will be something like this:
+
+```
+Creating app_rails_run ... done
+
+> app@1.0.0 start
+> tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css --watch
+
+
+warn - You have enabled the JIT engine which is currently in preview.
+warn - Preview features are not covered by semver, may introduce breaking changes, and can change at any time.
+
+Rebuilding...
+Done in 104ms.
+```
+
 ## Adding javascript libraries
 
 Since we are using [grundler](https://github.com/johanhalse/grundler) (and not webpacker 🎉), we need to use the importmap provided by [stimulus-rails](https://github.com/hotwired/stimulus-rails) (This is installed through the [hotwire-rails](https://github.com/hotwired/hotwire-rails) gem.)

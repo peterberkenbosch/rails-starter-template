@@ -30,6 +30,12 @@ interaction:
     service: rails
     command: bundle exec rake
 
+  npm:
+    description: Run npm commands
+    service: rails
+    command: npm
+    compose_run_options: [no-deps]
+
   rails:
     description: Run Rails commands
     service: rails
@@ -76,3 +82,4 @@ provision:
   - dip rails db:environment:set RAILS_ENV=development
   - dip rails db:setup SAFETY_ASSURED=1
   - dip compose up -d sidekiq
+  - dip npm install

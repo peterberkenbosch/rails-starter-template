@@ -265,8 +265,6 @@ GEM
       rails (>= 6.0.0)
     strong_migrations (0.7.8)
       activerecord (>= 5)
-    tailwindcss-rails (0.3.3)
-      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
     turbo-rails (0.7.0)
@@ -321,7 +319,6 @@ DEPENDENCIES
   selenium-webdriver (= 4.0.0.beta1)
   standard
   strong_migrations
-  tailwindcss-rails
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
