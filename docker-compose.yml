@@ -32,7 +32,6 @@ x-backend: &backend
     REDIS_URL: redis://redis:6379/
     DATABASE_URL: postgres://postgres:postgres@postgres:5432
     CHROME_URL: http://chrome:4444/wd/hub
-    BOOTSNAP_CACHE_DIR: /usr/local/bundle/_bootsnap
     HISTFILE: /app/log/.bash_history
     PSQL_HISTFILE: /app/log/.psql_history
     EDITOR: vi
