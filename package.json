@@ -1,5 +1,35 @@
 {
-  "dependencies": {
+  "name": "app",
+  "description": "Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
   },
-  "nodulePath": "./app/assets/javascripts/libraries"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css",
+    "start": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbcbv/app.git"
+  },
+  "keywords": [
+
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbcbv/app/issues"
+  },
+  "homepage": "https://github.com/pbcbv/app#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "nodulePath": "./app/assets/javascripts/libraries",
+  "dependencies": {
+  }
 }
