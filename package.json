@@ -8,7 +8,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css",
+    "start": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css --watch",
   },
   "repository": {
     "type": "git",
