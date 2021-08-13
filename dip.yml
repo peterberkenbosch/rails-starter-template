@@ -34,6 +34,7 @@ interaction:
     description: Run npm commands
     service: rails
     command: npm
+    compose_run_options: [no-deps]
 
   rails:
     description: Run Rails commands
