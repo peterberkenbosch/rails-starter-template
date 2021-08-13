@@ -82,3 +82,4 @@ provision:
   - dip rails db:environment:set RAILS_ENV=development
   - dip rails db:setup SAFETY_ASSURED=1
   - dip compose up -d sidekiq
+  - dip npm install

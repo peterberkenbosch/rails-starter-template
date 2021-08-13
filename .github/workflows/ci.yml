@@ -60,6 +60,9 @@ jobs:
         run: |
           bundle exec bundle-audit update
           bundle exec bundle-audit check
+      
+      - name: Install NPM packages
+        run: npm install
 
       - name: Run tests
         env:
