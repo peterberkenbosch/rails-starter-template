@@ -1,5 +1,24 @@
 {
-  "dependencies": {
+  "nodulePath": "./app/assets/javascripts/libraries",
+  "name": "app",
+  "description": "Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
   },
-  "nodulePath": "./app/assets/javascripts/libraries"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbcbv/app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbcbv/app/issues"
+  },
+  "homepage": "https://github.com/pbcbv/app#readme"
 }
