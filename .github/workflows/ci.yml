@@ -72,5 +72,6 @@ jobs:
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           PG_USER: postgres
         run: |
+          npm run build
           bin/rails db:test:prepare
           bin/rake
