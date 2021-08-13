@@ -30,6 +30,11 @@ interaction:
     service: rails
     command: bundle exec rake
 
+  npm:
+    description: Run npm commands
+    service: rails
+    command: npm
+
   rails:
     description: Run Rails commands
     service: rails
