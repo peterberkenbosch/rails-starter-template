@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/pbcbv/app/issues"
   },
-  "homepage": "https://github.com/pbcbv/app#readme"
+  "homepage": "https://github.com/pbcbv/app#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
 }
