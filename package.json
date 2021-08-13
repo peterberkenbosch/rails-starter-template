@@ -1,5 +1,4 @@
 {
-  "nodulePath": "./app/assets/javascripts/libraries",
   "name": "app",
   "description": "Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.",
   "version": "1.0.0",
@@ -16,7 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/pbcbv/app.git"
   },
-  "keywords": [],
+  "keywords": [
+
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -27,5 +28,8 @@
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
+  },
+  "nodulePath": "./app/assets/javascripts/libraries",
+  "dependencies": {
   }
 }
