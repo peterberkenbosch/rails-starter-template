@@ -18,7 +18,7 @@ To install dip, copy and run the command below. More installation options are fo
 $ gem install dip
 ```
 
-NOTE: If needed, install the correct version of ruby locally. The current version is listed at the top of the Gemfile but should also be automatically recognized by your shell. For example, at its current version, if you're using rbenv, run: `rbenv install 3.0.1`
+NOTE: If needed, install the correct version of ruby locally. The current version is listed at the top of the Gemfile but should also be automatically recognized by your shell. For example, at its current version, if you're using rbenv, run: `rbenv install 3.0.2`
 
 ### App Installation (dip)
 
