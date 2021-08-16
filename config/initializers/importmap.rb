@@ -1,5 +1,11 @@
 # Configure import map to be used for ESM
 Rails.application.config.importmap.draw do
+  pin "@hotwired/turbo-rails", to: "turbo.js"
+
+  pin "@hotwired/stimulus", to: "stimulus.js"
+  pin "@hotwired/stimulus-importmap-autoloader", to: "stimulus-importmap-autoloader.js"
+  pin_all_from "app/javascript/controllers", under: "controllers"
+
   # All JavaScript files in the tree are mapped to their name
   pin_all_from "app/assets/javascripts"
 

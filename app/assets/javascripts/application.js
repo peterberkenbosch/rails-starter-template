@@ -1,2 +1,2 @@
-import "@hotwired/stimulus-autoloader"
+import "@hotwired/stimulus-importmap-autoloader"
 import "@hotwired/turbo-rails"
