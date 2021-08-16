@@ -1,2 +1,2 @@
-import "@hotwired/turbo-rails"
 import "@hotwired/stimulus-autoloader"
+import "@hotwired/turbo-rails"
