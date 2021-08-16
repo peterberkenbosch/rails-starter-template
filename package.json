@@ -31,5 +31,6 @@
   },
   "nodulePath": "./app/assets/javascripts/libraries",
   "dependencies": {
+    "canvas-confetti": "1.4.0"
   }
 }
