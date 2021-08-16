@@ -1,6 +1,22 @@
 GIT
+  remote: https://github.com/hotwired/hotwire-rails.git
+  revision: 0347910577af4dd56c45ca0ea813109c3d426f7f
+  specs:
+    hotwire-rails (0.1.3)
+      rails (>= 6.0.0)
+      stimulus-rails
+      turbo-rails
+
+GIT
+  remote: https://github.com/rails/importmap-rails.git
+  revision: 02a053aa7794dba8de1f9cb2ec5b8c4e7312a628
+  specs:
+    importmap-rails (0.2.6)
+      rails (>= 6.0.0)
+
+GIT
   remote: https://github.com/rails/rails.git
-  revision: da911da97093fdda6d718943ab517283b46fd6ac
+  revision: ef65eeef081785e39da717cd9ce7888fa010d217
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -86,7 +102,7 @@ GIT
 
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
-  revision: 6a2627704663c1616b4f823c9133fe00acadc7c4
+  revision: 199e478be0c52133f9432cd58c658fe906082e94
   specs:
     bundler-audit (0.9.0)
       bundler (>= 1.2.0, < 3)
@@ -137,10 +153,6 @@ GEM
     grundler (0.1.0)
       down (~> 5.2.0)
       http (~> 4.3.0)
-    hotwire-rails (0.1.3)
-      rails (>= 6.0.0)
-      stimulus-rails
-      turbo-rails
     http (4.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -153,8 +165,6 @@ GEM
       ffi-compiler (>= 1.0, < 2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    importmap-rails (0.1.1)
-      rails (>= 6.0.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     launchy (2.5.0)
@@ -217,7 +227,7 @@ GEM
     rspec-mocks (3.10.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
-    rspec-rails (5.0.1)
+    rspec-rails (5.0.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       railties (>= 5.2)
@@ -235,7 +245,7 @@ GEM
       rubocop-ast (>= 1.8.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.9.1)
+    rubocop-ast (1.10.0)
       parser (>= 3.0.1.1)
     rubocop-performance (1.11.4)
       rubocop (>= 1.7.0, < 2.0)
@@ -267,15 +277,13 @@ GEM
     standard (1.1.7)
       rubocop (= 1.18.4)
       rubocop-performance (= 1.11.4)
-    stimulus-rails (0.3.0)
+    stimulus-rails (0.3.7)
       rails (>= 6.0.0)
     strong_migrations (0.7.8)
       activerecord (>= 5)
-    tailwindcss-rails (0.3.3)
-      rails (>= 6.0.0)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.7.0)
+    turbo-rails (0.7.3)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -313,8 +321,8 @@ DEPENDENCIES
   capybara (>= 2.15)
   factory_bot_rails
   grundler
-  hotwire-rails
-  importmap-rails
+  hotwire-rails!
+  importmap-rails!
   jbuilder (~> 2.7)
   letter_opener_web (~> 1.3, >= 1.3.4)
   pg (~> 1.1)
@@ -327,7 +335,6 @@ DEPENDENCIES
   selenium-webdriver (= 4.0.0.beta1)
   standard
   strong_migrations
-  tailwindcss-rails
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
