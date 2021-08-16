@@ -6,12 +6,26 @@ This comes with a full docker setup for local development including system specs
 
 ## TL;DR
 
+with dip–CLI](https://github.com/bibendi/dip):
+
 ```sh
 $ gem install dip
 $ dip provision
 $ dip rails s
 # in another window 
 $ dip npm start
+```
+
+Without dip:
+
+```sh
+bundle install
+bin/rails db:create
+bin/rails db:setup SAFETY_ASSURED=1
+npm install
+bundle exec rails s
+# in another window 
+npm start
 ```
 
 ## Provisioning and Interacting with Docker and dip
