@@ -17,5 +17,4 @@ Rails.application.config.importmap.draw do
   # Pin vendored modules by first adding the following to app/assets/config/manifest.js:
   # //= link_tree ../../../vendor/assets/javascripts .js
   # pin_all_from "vendor/assets/javascripts"
-  pin_all_from "lib/assets/javascripts/libraries", append_base_path: true
 end
