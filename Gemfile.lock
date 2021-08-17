@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: dfef44716a6a0fc50c44e12218e65e51e6ee88bf
+  revision: 1f566bd9ba0d1e657f09608b1d4140f9e11a8326
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -102,7 +102,7 @@ GIT
 
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
-  revision: 199e478be0c52133f9432cd58c658fe906082e94
+  revision: cbdf310579c2dba081fbf1cfe7ce151e23ab326a
   specs:
     bundler-audit (0.9.0)
       bundler (>= 1.2.0, < 3)
