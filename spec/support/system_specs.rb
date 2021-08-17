@@ -15,12 +15,12 @@ Capybara.register_driver :chrome_headless do |app|
     Capybara::Selenium::Driver.new(app,
       browser: :remote,
       url: ENV["CHROME_URL"],
-      options: options)
+      capabilities: options)
   else
     require "webdrivers"
     Capybara::Selenium::Driver.new(app,
       browser: :chrome,
-      options: options)
+      capabilities: options)
   end
 end
 
