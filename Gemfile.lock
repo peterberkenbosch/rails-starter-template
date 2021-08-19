@@ -9,14 +9,14 @@ GIT
 
 GIT
   remote: https://github.com/rails/importmap-rails.git
-  revision: 02a053aa7794dba8de1f9cb2ec5b8c4e7312a628
+  revision: 0d6c7f502c7246919cdc55016b569d23a884fdee
   specs:
-    importmap-rails (0.2.6)
+    importmap-rails (0.2.7)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 1f566bd9ba0d1e657f09608b1d4140f9e11a8326
+  revision: 6b5915895b5e58627d834bbd23bd8e3ceb3296a3
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -102,7 +102,7 @@ GIT
 
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
-  revision: cbdf310579c2dba081fbf1cfe7ce151e23ab326a
+  revision: 20e6b81272b1fcc5a6bc7371e10620343f9f49ee
   specs:
     bundler-audit (0.9.0)
       bundler (>= 1.2.0, < 3)
@@ -212,7 +212,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.3.0)
+    rails-html-sanitizer (1.4.1)
       loofah (~> 2.3)
     rainbow (3.0.0)
     rake (13.0.6)
