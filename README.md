@@ -4,6 +4,30 @@ Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, Ta
 
 This comes with a full docker setup for local development including system specs that can run on M1 Apple Docker instances (and also without docker).
 
+## TL;DR
+
+[with dip–CLI](https://github.com/bibendi/dip):
+
+```sh
+$ gem install dip
+$ dip provision
+$ dip rails s
+# in another window 
+$ dip npm start
+```
+
+Without dip:
+
+```sh
+bundle install
+bin/rails db:create
+bin/rails db:setup SAFETY_ASSURED=1
+npm install
+bundle exec rails s
+# in another window 
+npm start
+```
+
 ## Provisioning and Interacting with Docker and dip
 
 You need `docker` and `docker-compose` installed (for MacOS just use [official app](https://docs.docker.com/engine/installation/mac/)).
