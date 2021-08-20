@@ -6,7 +6,7 @@ This comes with a full docker setup for local development including system specs
 
 ## TL;DR
 
-with dip–CLI](https://github.com/bibendi/dip):
+[with dip–CLI](https://github.com/bibendi/dip):
 
 ```sh
 $ gem install dip
