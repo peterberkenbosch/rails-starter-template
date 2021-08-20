@@ -129,7 +129,7 @@ Done in 104ms.
 
 Since we are using [grundler](https://github.com/johanhalse/grundler) (and not webpacker 🎉), we need to use the importmap provided by [stimulus-rails](https://github.com/hotwired/stimulus-rails) (This is installed through the [hotwire-rails](https://github.com/hotwired/hotwire-rails) gem.)
 
-Grundler is configured to store all packages in the `app/assets/javascripts/libraries` folder. This way these libraries are automaticly picked up by the importmap.
+Grundler is configured to store all packages in the `app/javascript/libraries` folder. This way these libraries are automaticly picked up by the importmap.
 
 For example to use the `confetti` package we can do the following:
 
