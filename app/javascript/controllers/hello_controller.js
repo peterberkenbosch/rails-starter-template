@@ -1,6 +1,6 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
-  connect() {
-    this.element.textContent = "Hello World From StimulusController!"
+  connect () {
+    this.element.textContent = 'Hello World From StimulusController!'
   }
 }

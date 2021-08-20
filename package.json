@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard",
     "build": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css",
     "start": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css --watch"
   },
@@ -15,9 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/pbcbv/app.git"
   },
-  "keywords": [
-
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -27,9 +25,9 @@
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "postcss": "^8.3.6",
+    "standard": "^16.0.3",
     "tailwindcss": "^2.2.7"
   },
   "nodulePath": "./app/javascript/libraries",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
