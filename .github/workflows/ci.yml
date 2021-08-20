@@ -63,9 +63,12 @@ jobs:
           bundle exec bundle-audit check
       
       - name: Install NPM packages
-        run: npm install
+        run: npm ci
+      
+      - name: StandardJs Check
+        run: npm test
 
-      - name: Run tests
+      - name: RSpec
         env:
           DATABASE_URL: postgres://postgres:password@localhost:5432/test
           REDIS_URL: redis://localhost:6379/0
