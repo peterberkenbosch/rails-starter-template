@@ -31,5 +31,10 @@
   "nodulePath": "./app/javascript/libraries",
   "dependencies": {
     "canvas-confetti": "1.4.0"
+  },
+  "standard": {
+    "ignore": [
+      "/app/javascript/libraries"      
+    ]
   }
 }
