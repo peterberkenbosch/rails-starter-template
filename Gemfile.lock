@@ -9,14 +9,14 @@ GIT
 
 GIT
   remote: https://github.com/rails/importmap-rails.git
-  revision: 0d6c7f502c7246919cdc55016b569d23a884fdee
+  revision: fc02a81fdfe7c3bfc3397256ca182adf4e2f5010
   specs:
-    importmap-rails (0.2.7)
+    importmap-rails (0.3.0)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 074c7f50c5a800a8565790ed158d3084f175820a
+  revision: fc9a1790333c1f7530f45e8716543148521f668b
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -77,7 +77,7 @@ GIT
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.5.0.beta)
+      zeitwerk (~> 2.5.0.beta2)
     rails (7.0.0.alpha)
       actioncable (= 7.0.0.alpha)
       actionmailbox (= 7.0.0.alpha)
@@ -277,13 +277,13 @@ GEM
     standard (1.1.7)
       rubocop (= 1.18.4)
       rubocop-performance (= 1.11.4)
-    stimulus-rails (0.3.7)
+    stimulus-rails (0.3.8)
       rails (>= 6.0.0)
     strong_migrations (0.7.8)
       activerecord (>= 5)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.7.3)
+    turbo-rails (0.7.4)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -306,7 +306,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.0.beta)
+    zeitwerk (2.5.0.beta2)
 
 PLATFORMS
   aarch64-linux
