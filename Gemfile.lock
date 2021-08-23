@@ -9,14 +9,14 @@ GIT
 
 GIT
   remote: https://github.com/rails/importmap-rails.git
-  revision: 7d00f975a6ee4398c66d63e37b0b0e99f5b4a3b8
+  revision: ec73894599d90f4201d77bbef0114d59ea7bef99
   specs:
-    importmap-rails (0.3.1)
+    importmap-rails (0.3.2)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 9615e21ab7baabf0cda6bc74cb68e26a2a780923
+  revision: 891189d9b8ec5c983f1639927fe405515a720c82
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -343,4 +343,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.25
+   2.2.26
