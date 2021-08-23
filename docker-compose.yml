@@ -8,11 +8,11 @@ x-app: &app
       RUBY_VERSION: '3.0.2'
       PG_MAJOR: '13'
       NODE_MAJOR: '16'
-      BUNDLER_VERSION: '2.2.20'
+      BUNDLER_VERSION: '2.2.26'
   environment: &env
     NODE_ENV: ${NODE_ENV:-development}
     RAILS_ENV: ${RAILS_ENV:-development}
-  image: x-app-dev:2.0.3
+  image: x-app-dev:3.0.0
   tmpfs:
     - /tmp
 
@@ -86,7 +86,7 @@ services:
       interval: 5s
 
   redis:
-    image: redis:6.0-alpine
+    image: "redis:6.2.5-buster"
     volumes:
       - redis:/data
     ports:
