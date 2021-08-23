@@ -81,14 +81,6 @@ dip standard --fix
 
 ## Running the specs
 
-After a clean provisioning, before you can run the specs, you will have setup the test database like so:
-
-When using the Docker setup with Dip we have specify the RAILS_ENV like so:
-
-```sh
-$ dip bundle exec rails db:test:prepare RAILS_ENV=test
-```
-
 Inside the docker container we have 2 different commands. To just run the unit tests:
 
 ```sh
