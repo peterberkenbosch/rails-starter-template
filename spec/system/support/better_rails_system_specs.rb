@@ -10,7 +10,7 @@ module BetterRailsSystemTests
   def image_path
     absolute_image_path.relative_path_from(Rails.root).to_s
   end
-  
+
   # Convert dom_id to selector
   def dom_id(*args)
     "##{super}"
