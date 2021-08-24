@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 891189d9b8ec5c983f1639927fe405515a720c82
+  revision: 703d4b216a873a387e8986d72364d05c06e6e16c
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -212,7 +212,7 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.1)
+    rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
     rainbow (3.0.0)
     rake (13.0.6)
