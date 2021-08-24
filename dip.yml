@@ -36,6 +36,12 @@ interaction:
     command: npm
     compose_run_options: [no-deps]
 
+  npx:
+    description: Run npx
+    service: rails
+    command: npx
+    compose_run_options: [no-deps]
+
   rails:
     description: Run Rails commands
     service: rails
@@ -67,10 +73,12 @@ interaction:
     command: bundle exec standardrb
 
   psql:
+    description: Run the psql CLI on the dev database
     service: postgres
     command: psql -h postgres -U postgres -d app_development
 
   'redis-cli':
+    descriptions: Run the Redis CLI
     service: redis
     command: redis-cli -h redis
 
