@@ -9,14 +9,14 @@ GIT
 
 GIT
   remote: https://github.com/rails/importmap-rails.git
-  revision: 4ef7873f0379661322e12388677f1452166ea0e4
+  revision: 979a202a1738357e7614002ad1c2bf7c80306ccc
   specs:
     importmap-rails (0.3.4)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: c70e26487163bb05cf39d47dbb44af4b0654286f
+  revision: af7428c4acd0fcf9eed5c7215856594a078f23b7
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -102,7 +102,7 @@ GIT
 
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
-  revision: 0b346f68229760c7313b64cae6b6edab83d62068
+  revision: 05d7c4979e3ccdd17ae731b8ac29337dd747e653
   specs:
     bundler-audit (0.9.0)
       bundler (>= 1.2.0, < 3)
@@ -283,7 +283,7 @@ GEM
       activerecord (>= 5)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.7.4)
+    turbo-rails (0.7.6)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
