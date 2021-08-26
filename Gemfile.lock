@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: af7428c4acd0fcf9eed5c7215856594a078f23b7
+  revision: a3cfa4a20d6b57a0fffbffd4e0e8eb7924532879
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -283,7 +283,7 @@ GEM
       activerecord (>= 5)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.7.6)
+    turbo-rails (0.7.7)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
