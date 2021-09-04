@@ -12,7 +12,7 @@ x-app: &app
   environment: &env
     NODE_ENV: ${NODE_ENV:-development}
     RAILS_ENV: ${RAILS_ENV:-development}
-  image: x-app-dev:3.0.0
+  image: x-app-dev:3.0.1
   tmpfs:
     - /tmp
 
@@ -62,7 +62,7 @@ services:
         condition: service_started
 
   chrome:
-    image: seleniarm/standalone-chromium:4.0.0-beta-1-20210215
+    image: selenium/standalone-chrome:4.0.0-rc-1-20210902
     volumes: 
       - /dev/shm:/dev/shm
 
