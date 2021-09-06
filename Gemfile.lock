@@ -9,15 +9,14 @@ GIT
 
 GIT
   remote: https://github.com/rails/importmap-rails.git
-  revision: 65d0f2255ba62b4c4ccb03993945772780d52a19
+  revision: 41d1f925c86777e74197b2a3ab97d1e98146dccc
   specs:
     importmap-rails (0.5.0)
-      httparty (>= 0.16)
       rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 82e44320589fcbacf16012fd7fdca07835b88f20
+  revision: 78e402077d4d69b08db7daf8944a32eef0cf6ac4
   branch: main
   specs:
     actioncable (7.0.0.alpha)
@@ -78,7 +77,6 @@ GIT
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.5.0.beta3)
     rails (7.0.0.alpha)
       actioncable (= 7.0.0.alpha)
       actionmailbox (= 7.0.0.alpha)
@@ -100,6 +98,7 @@ GIT
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
+      zeitwerk (~> 2.5.0.beta3)
 
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
@@ -164,9 +163,6 @@ GEM
     http-form_data (2.3.0)
     http-parser (1.2.3)
       ffi-compiler (>= 1.0, < 2.0)
-    httparty (0.18.1)
-      mime-types (~> 3.0)
-      multi_xml (>= 0.5.2)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -186,13 +182,9 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (1.0.1)
     method_source (1.0.0)
-    mime-types (3.3.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0901)
     mini_mime (1.1.1)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
-    multi_xml (0.6.0)
     nio4r (2.5.8)
     nokogiri (1.12.4)
       mini_portile2 (~> 2.6.1)
