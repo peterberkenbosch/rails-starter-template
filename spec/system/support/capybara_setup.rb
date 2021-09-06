@@ -17,7 +17,7 @@ Capybara.register_driver :headless do |app|
   else
     require "webdrivers"
     Capybara::Selenium::Driver.new(app,
-      browser: :chrome,
+      browser: :firefox,
       capabilities: options)
   end
 end
