@@ -41,6 +41,11 @@ interaction:
     service: rails
     command: npx
     compose_run_options: [no-deps]
+  
+  yarn:
+    service: rails
+    command: yarn
+    compose_run_options: [no-deps]
 
   rails:
     description: Run Rails commands
@@ -70,8 +75,8 @@ interaction:
   standard:
     description: Run StandardRb commands
     service: rails
-    command: bundle exec standardrb
-
+    command: bundle exec standardrb  
+  
   psql:
     description: Run the psql CLI on the dev database
     service: postgres
