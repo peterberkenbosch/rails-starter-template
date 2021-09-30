@@ -35,14 +35,6 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Cache gems
-        uses: actions/cache@v1
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
-
       - name: Install dependencies
         run: |
           sudo apt-get -yqq install libpq-dev
