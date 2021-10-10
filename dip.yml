@@ -45,7 +45,7 @@ interaction:
         service: rails
         compose:
           run_options: [service-ports, use-aliases]
-          
+
   rspec:
     description: Run Rails unit tests
     service: rails
@@ -83,5 +83,5 @@ provision:
   - dip rails db:environment:set RAILS_ENV=development
   - dip rails db:setup SAFETY_ASSURED=1
   - dip compose up -d sidekiq
-  - dip npm install
+  - dip yarn install
   - dip rails db:test:prepare RAILS_ENV=test
