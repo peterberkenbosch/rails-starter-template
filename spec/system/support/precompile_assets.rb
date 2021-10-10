@@ -8,13 +8,14 @@ RSpec.configure do |config|
       next
     end
 
-    $stdout.puts "\n🐢  Running NPM Build.\n"
+    $stdout.puts "\n🐢  Running CSS and JS builds.\n"
     original_stdout = $stdout.clone
     start = Time.current
     begin
       # Silence NPM build output
       $stdout.reopen(File.new("/dev/null", "w"))
-      system("npm build")
+      system("yarn build")
+      system("yarn build:css")
     ensure
       $stdout.reopen(original_stdout)
       $stdout.puts "Finished in #{(Time.current - start).round(2)} seconds"
