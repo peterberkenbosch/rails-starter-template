@@ -2,9 +2,14 @@
   "name": "app",
   "private": "true",
   "dependencies": {
-    "esbuild": "^0.13.4"
+    "autoprefixer": "^10.3.7",
+    "esbuild": "^0.13.4",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-nesting": "^8.0.1"
   },
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds"
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds",
+    "build:css": "postcss ./app/assets/stylesheets/application.postcss.css -o ./app/assets/builds/application.css"
   }
 }

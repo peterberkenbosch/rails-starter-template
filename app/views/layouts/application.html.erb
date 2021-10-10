@@ -9,7 +9,8 @@
     <%= stylesheet_link_tag 'application', data: {turbolinks_track: true} %>    
     <%= javascript_importmap_tags %>
     <%= yield :head %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>    
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>    
   </head>
 
   <body class="h-full font-sans antialiased font-normal leading-normal bg-gray-100">
