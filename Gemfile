@@ -55,3 +55,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "strong_migrations"
 gem "hotwire-rails"
+gem "cssbundling-rails", github: "rails/cssbundling-rails"
+gem "jsbundling-rails", github: "rails/jsbundling-rails"
