@@ -29,18 +29,6 @@ interaction:
     description: Run Rake commands
     service: rails
     command: bundle exec rake
-
-  npm:
-    description: Run npm commands
-    service: rails
-    command: npm
-    compose_run_options: [no-deps]
-
-  npx:
-    description: Run npx
-    service: rails
-    command: npx
-    compose_run_options: [no-deps]
   
   yarn:
     service: rails
