@@ -1,10 +1,17 @@
 module.exports = {
   mode: 'jit',
-  purge: [
-    './app/**/*.html.erb',
-    './app/helpers/**/*.rb',
-    './app/javascript/**/*.js'
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms')({ strategy: 'class' }),    
+    require('@tailwindcss/typography'),
   ],
+
+  purge: [
+    './app/helpers/**/*.rb',
+    './app/javascript/**/*.js',
+    './app/views/**/*.erb',
+  ],
+
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {}
@@ -12,9 +19,4 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio')
-  ]
 }
