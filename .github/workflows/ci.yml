@@ -51,14 +51,8 @@ jobs:
       - name: Bundler Audit
         run: |
           bundle exec bundle-audit update
-          bundle exec bundle-audit check
+          bundle exec bundle-audit check      
       
-      - name: Install NPM packages
-        run: npm ci
-      
-      - name: StandardJs Check
-        run: npm test
-
       - name: RSpec
         env:
           DATABASE_URL: postgres://postgres:password@localhost:5432/test
@@ -66,7 +60,6 @@ jobs:
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           PG_USER: postgres
-        run: |
-          npm run build
+        run: |          
           bin/rails db:test:prepare
           bin/rake
