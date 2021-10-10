@@ -40,17 +40,8 @@ jobs:
           sudo apt-get -yqq install libpq-dev
           gem install bundler
           bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
-          
-      - name: Yarn install
-        run: yarn install
+          bundle install --jobs 4 --retry 3          
       
-      - name: Build JS
-        run: yarn build
-      
-      - name: Build CSS
-        run: yarn build:css
-
       - name: Standardrb Check
         run: bundle exec standardrb
 
