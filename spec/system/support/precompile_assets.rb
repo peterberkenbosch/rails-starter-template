@@ -14,7 +14,7 @@ RSpec.configure do |config|
     begin
       # Silence NPM build output
       $stdout.reopen(File.new("/dev/null", "w"))
-      system("npm build")
+      system("npm run build")
     ensure
       $stdout.reopen(original_stdout)
       $stdout.puts "Finished in #{(Time.current - start).round(2)} seconds"

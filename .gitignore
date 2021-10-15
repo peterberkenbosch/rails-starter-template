@@ -30,3 +30,4 @@
 
 /node_modules
 /app/assets/stylesheets/tailwind-build.css
+/vendor/bundle/

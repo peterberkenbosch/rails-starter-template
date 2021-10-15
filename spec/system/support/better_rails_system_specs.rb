@@ -17,10 +17,12 @@ module BetterRailsSystemTests
   end
 end
 
+require "capybara-inline-screenshot/minitest"
 RSpec.configure do |config|
   # Add #dom_id support
   config.include ActionView::RecordIdentifier, type: :system
   config.include BetterRailsSystemTests, type: :system
+  config.include CapybaraInlineScreenshot::Minitest, type: :system
 
   # Make urls in mailers contain the correct server host
   config.around(:each, type: :system) do |ex|

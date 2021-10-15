@@ -1,35 +1,30 @@
-require "capybara/rspec"
+# Usually, especially when using Selenium, developers tend to increase the max wait time.
+# With Cuprite, there is no need for that.
+# We use a Capybara default value here explicitly.
+Capybara.default_max_wait_time = 2
 
-Capybara.server = :puma, {Silent: true}
+# Normalize whitespaces when using `has_text?` and similar matchers,
+# i.e., ignore newlines, trailing spaces, etc.
+# That makes tests less dependent on slightly UI changes.
+Capybara.default_normalize_ws = true
 
-Capybara.register_driver :headless do |app|
-  options = ::Selenium::WebDriver::Firefox::Options.new
-  options.add_argument("--no-sandbox")
-  options.add_argument("--headless")
-  options.add_argument("--disable-gpu")
-  options.add_argument("--window-size=2800,2800")
+# Where to store system tests artifacts (e.g. screenshots, downloaded files, etc.).
+# It could be useful to be able to configure this path from the outside (e.g., on CI).
+Capybara.save_path = ENV.fetch("CAPYBARA_ARTIFACTS", "./tmp/capybara")
 
-  if ENV["REMOTE_SELENIUM_URL"]
-    Capybara::Selenium::Driver.new(app,
-      browser: :remote,
-      url: ENV["REMOTE_SELENIUM_URL"],
-      capabilities: options)
-  else
-    require "webdrivers"
-    Capybara::Selenium::Driver.new(app,
-      browser: :firefox,
-      capabilities: options)
+# The Capybara.using_session allows you to manipulate a different browser session, and thus, multiple independent sessions within a single test scenario. That’s especially useful for testing real-time features, e.g., something with WebSocket.
+# This patch tracks the name of the last session used. We’re going to use this information to support taking failure screenshots in multi-session tests.
+Capybara.singleton_class.prepend(Module.new do
+  attr_accessor :last_used_session
+
+  def using_session(name, &block)
+    self.last_used_session = name
+    super
+  ensure
+    self.last_used_session = nil
   end
-end
+end)
 
-RSpec.configure do |config|
-  config.before(:each, type: :system) {
-    driven_by :headless
 
-    capybara_host = IPSocket.getaddress(Socket.gethostname)
-
-    Capybara.app_host = "http://#{capybara_host}:3000"
-    Capybara.server_host = capybara_host
-    Capybara.server_port = 3000
-  }
-end
+Capybara.server_host = "0.0.0.0"
+Capybara.app_host = "http://#{`hostname`.strip&.downcase || "0.0.0.0"}"

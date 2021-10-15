@@ -86,10 +86,19 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    capybara-inline-screenshot (2.2.1)
+      capybara-screenshot
+    capybara-screenshot (1.0.25)
+      capybara (>= 1.0, < 4)
+      launchy
     childprocess (4.1.0)
+    cliver (0.3.2)
     coderay (1.1.3)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    cuprite (0.13)
+      capybara (>= 2.1, < 4)
+      ferrum (~> 0.11.0)
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -101,6 +110,11 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    ferrum (0.11)
+      addressable (~> 2.5)
+      cliver (~> 0.3)
+      concurrent-ruby (~> 1.1)
+      websocket-driver (>= 0.6, < 0.8)
     ffi (1.15.4)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -288,10 +302,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (4.6.1)
-      nokogiri (~> 1.6)
-      rubyzip (>= 1.3.0)
-      selenium-webdriver (>= 3.0, < 4.0)
     websocket (1.2.9)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
@@ -303,6 +313,7 @@ GEM
 PLATFORMS
   aarch64-linux
   x86_64-darwin-20
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -310,7 +321,9 @@ DEPENDENCIES
   brakeman
   bundler-audit!
   byebug
-  capybara (>= 2.15)
+  capybara
+  capybara-inline-screenshot
+  cuprite
   factory_bot_rails
   grundler
   hotwire-rails
@@ -324,12 +337,11 @@ DEPENDENCIES
   redis (~> 4.0)
   rspec-rails
   sass-rails (>= 6)
-  selenium-webdriver (= 4.0.0.beta1)
+  selenium-webdriver
   standard
   strong_migrations
   tzinfo-data
   web-console (>= 4.1.0)
-  webdrivers
 
 RUBY VERSION
    ruby 3.0.2p107
