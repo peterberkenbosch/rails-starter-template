@@ -37,10 +37,10 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara'
-  gem 'cuprite'
-  gem 'selenium-webdriver'
-  gem 'capybara-inline-screenshot'
+  gem "capybara"
+  gem "cuprite"
+  gem "selenium-webdriver"
+  gem "capybara-inline-screenshot"
 end
 
 group :development do

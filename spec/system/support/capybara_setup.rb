@@ -25,6 +25,5 @@ Capybara.singleton_class.prepend(Module.new do
   end
 end)
 
-
 Capybara.server_host = "0.0.0.0"
 Capybara.app_host = "http://#{`hostname`.strip&.downcase || "0.0.0.0"}"

@@ -22,7 +22,7 @@ remote_browser =
     false
   end
 
-remote_options = remote_browser ? { url: REMOTE_BROWSER_URL } : {}
+remote_options = remote_browser ? {url: REMOTE_BROWSER_URL} : {}
 
 # Then, we need to register our driver to be able to use it later
 # with #driven_by method.
@@ -32,14 +32,14 @@ Capybara.register_driver(:cuprite) do |app|
     **{
       window_size: [1200, 800],
       # See additional options for Dockerized environment in the respective section of this article
-      browser_options: remote_browser ? { "no-sandbox" => nil } : {},
+      browser_options: remote_browser ? {"no-sandbox" => nil} : {},
       # Increase Chrome startup wait time (required for stable CI builds)
       process_timeout: 10,
       # Enable debugging capabilities
       inspector: true,
       # Allow running Chrome in a headful mode by setting HEADLESS env
       # var to a falsey value
-      headless: !ENV["HEADLESS"].in?(%w[n 0 no false]),
+      headless: !ENV["HEADLESS"].in?(%w[n 0 no false])
     }.merge(remote_options)
   )
 end
