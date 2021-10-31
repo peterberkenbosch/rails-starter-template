@@ -47,7 +47,6 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
 
 # Configure bundler
 ENV LANG=C.UTF-8 \
-  BUNDLE_JOBS=4 \
   BUNDLE_RETRY=3 \
   BUNDLE_APP_CONFIG=.bundle
 
