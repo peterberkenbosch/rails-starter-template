@@ -14,7 +14,7 @@
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^9.0.0",
-    "tailwindcss": "^2.2.16"
+    "tailwindcss": "^2.2.19"
   },
   "devDependencies": {
     "standard": "^16.0.4"
