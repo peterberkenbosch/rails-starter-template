@@ -8,11 +8,12 @@ x-app: &app
       RUBY_VERSION: '3.0.2'
       PG_MAJOR: '13'
       NODE_MAJOR: '16'
-      BUNDLER_VERSION: '2.2.26'
+      YARN_VERSION: '1.22.15'
+      BUNDLER_VERSION: '2.2.29'
   environment: &env
     NODE_ENV: ${NODE_ENV:-development}
     RAILS_ENV: ${RAILS_ENV:-development}
-  image: x-app-dev:3.0.1
+  image: x-app-dev:4.0.1
   tmpfs:
     - /tmp
 
@@ -71,7 +72,7 @@ services:
     command: bundle exec sidekiq -C config/sidekiq.yml
   
   postgres:
-    image: postgres:13
+    image: postgres:13-alpine
     volumes:
       - .dockerdev/.psqlrc:/root/.psqlrc:ro
       - postgres:/var/lib/postgresql/data
@@ -86,7 +87,7 @@ services:
       interval: 5s
 
   redis:
-    image: "redis:6.2.5-buster"
+    image: "redis:6.2.6-alpine"
     volumes:
       - redis:/data
     ports:

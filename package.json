@@ -1,37 +1,23 @@
 {
   "name": "app",
-  "description": "Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
+  "private": "true",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo-rails": "^7.0.1",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.3.7",
+    "esbuild": "^0.13.4",
+    "esbuild-rails": "^1.0.3",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nesting": "^8.0.1",
+    "tailwindcss": "^2.2.16"
   },
   "scripts": {
-    "test": "standard",
-    "build": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css",
-    "start": "tailwindcss -i ./app/assets/stylesheets/tailwind.css -o ./app/assets/stylesheets/tailwind-build.css --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pbcbv/app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pbcbv/app/issues"
-  },
-  "homepage": "https://github.com/pbcbv/app#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.6",
-    "standard": "^16.0.3",
-    "tailwindcss": "^2.2.7"
-  },
-  "nodulePath": "./app/javascript/libraries",
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/forms": "^0.3.3",
-    "@tailwindcss/typography": "^0.4.1"
+    "build": "node esbuild.config.js",
+    "build:css": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
   }
 }

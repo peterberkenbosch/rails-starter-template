@@ -53,8 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "importmap-rails"
 gem "strong_migrations"
 gem "hotwire-rails"
-gem "grundler"
-gem "nokogiri", ">= 1.12.5"
+gem "cssbundling-rails", github: "rails/cssbundling-rails"
+gem "jsbundling-rails", github: "rails/jsbundling-rails"

@@ -1,4 +1,18 @@
 GIT
+  remote: https://github.com/rails/cssbundling-rails.git
+  revision: 15e5ccbb0473724d74783224c6d4471e122a2a50
+  specs:
+    cssbundling-rails (0.2.4)
+      railties (>= 6.0.0)
+
+GIT
+  remote: https://github.com/rails/jsbundling-rails.git
+  revision: 8b4d2a95bc4bf5c5d590813242ac8f0aee0567fc
+  specs:
+    jsbundling-rails (0.1.9)
+      railties (>= 6.0.0)
+
+GIT
   remote: https://github.com/rubysec/bundler-audit.git
   revision: f64883a878d172722164495668ff205c21eb55c3
   specs:
@@ -92,10 +106,6 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.4.4)
-    domain_name (0.5.20190701)
-      unf (>= 0.0.5, < 1.0.0)
-    down (5.2.4)
-      addressable (~> 2.8)
     erubi (1.10.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
@@ -103,32 +113,14 @@ GEM
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
     ffi (1.15.4)
-    ffi-compiler (1.0.1)
-      ffi (>= 1.0.0)
-      rake
     globalid (0.5.2)
       activesupport (>= 5.0)
-    grundler (0.1.0)
-      down (~> 5.2.0)
-      http (~> 4.3.0)
     hotwire-rails (0.1.3)
       rails (>= 6.0.0)
       stimulus-rails
       turbo-rails
-    http (4.3.0)
-      addressable (~> 2.3)
-      http-cookie (~> 1.0)
-      http-form_data (~> 2.2)
-      http-parser (~> 1.2.0)
-    http-cookie (1.0.4)
-      domain_name (~> 0.5)
-    http-form_data (2.3.0)
-    http-parser (1.2.3)
-      ffi-compiler (>= 1.0, < 2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    importmap-rails (0.8.1)
-      rails (>= 6.0.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     launchy (2.5.0)
@@ -273,9 +265,6 @@ GEM
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.8)
     unicode-display_width (2.1.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
@@ -305,13 +294,12 @@ DEPENDENCIES
   bundler-audit!
   byebug
   capybara (>= 2.15)
+  cssbundling-rails!
   factory_bot_rails
-  grundler
   hotwire-rails
-  importmap-rails
   jbuilder (~> 2.7)
+  jsbundling-rails!
   letter_opener_web (~> 1.3, >= 1.3.4)
-  nokogiri (>= 1.12.5)
   pg (~> 1.1)
   pry-rails
   puma (~> 5.5)
@@ -330,4 +318,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.26
+   2.2.30

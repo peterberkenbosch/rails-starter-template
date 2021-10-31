@@ -30,3 +30,6 @@
 
 /node_modules
 /app/assets/stylesheets/tailwind-build.css
+
+/app/assets/builds/*
+!/app/assets/builds/.keep

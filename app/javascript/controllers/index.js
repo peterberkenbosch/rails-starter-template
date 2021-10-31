@@ -1,12 +1,10 @@
-import { Application } from '@hotwired/stimulus'
+// Load all the controllers within this directory and all subdirectories.
+// Controller files must be named *_controller.js.
 
-// Import and register all your controllers from the importmap under controllers/*
-import { registerControllersFrom } from '@hotwired/stimulus-importmap-autoloader'
+import { application } from "./application"
 
-const application = Application.start()
-
-// Configure Stimulus development experience
-application.warnings = true
-application.debug = false
-window.Stimulus = application
-registerControllersFrom('controllers', application)
+// Register each controller with Stimulus
+import controllers from "./**/*_controller.js"
+controllers.forEach((controller) => {
+  application.register(controller.name, controller.module.default)
+})

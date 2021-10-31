@@ -1,0 +1,3 @@
+web: dip rails s
+js: dip yarn build --watch
+css: dip yarn build:css --watch
