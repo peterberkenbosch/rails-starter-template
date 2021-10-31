@@ -25,16 +25,28 @@ This app uses the [dip–CLI](https://github.com/bibendi/dip), a utility CLI too
 
 ## Code Guidelines
 
-It uses [StandardRB](https://github.com/testdouble/standard) to automatically fix code style offenses.
+It uses [StandardRB](https://github.com/testdouble/standard) for Ruby to automatically fix code style offenses.
 
 ```sh
 dip standard
 ```
 
-to automatically format the code with standard you can run:
+to automatically format Ruby with StandardRB you can run:
 
 ```sh
 dip standard --fix
+```
+
+For Javascript we use [StandardJS](https://standardjs.com/).
+
+```sh
+dip yarn standard
+```
+
+to automatically format the javascript with StandardJS you can run:
+
+```sh
+dip yarn standard --fix
 ```
 
 ## Running the specs
