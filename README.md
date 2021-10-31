@@ -14,20 +14,7 @@ This comes with a full docker setup for local development including system specs
 ```sh
 $ gem install dip
 $ dip provision
-$ dip rails s
-# in other windows (todo: figure out foreman / Procfile.dev running)
-$ dip yarn build
-$ dip yarn build:css
-```
-
-Without dip:
-
-```sh
-bundle install
-bin/rails db:create
-bin/rails db:setup SAFETY_ASSURED=1
-yarn install
-bin/dev
+$ foreman start -f Procfile.dip.dev
 ```
 
 ## Provisioning and Interacting with Docker and dip
