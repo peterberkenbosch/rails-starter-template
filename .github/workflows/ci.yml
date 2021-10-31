@@ -44,6 +44,9 @@ jobs:
       
       - name: Standardrb Check
         run: bundle exec standardrb
+      
+      - name: StandardJs Check
+        run: yarn standard
 
       - name: Brakeman Check
         run: bundle exec brakeman
