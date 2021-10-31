@@ -16,7 +16,11 @@
     "postcss-nesting": "^8.0.1",
     "tailwindcss": "^2.2.16"
   },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  },
   "scripts": {
+    "standard": "standard",
     "build": "node esbuild.config.js",
     "build:css": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
   }
