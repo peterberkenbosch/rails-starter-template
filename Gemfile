@@ -38,7 +38,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 2.15"
-  gem "selenium-webdriver", "4.0.0.beta1"
+  gem "selenium-webdriver"
   gem "webdrivers", require: false
 end
 
