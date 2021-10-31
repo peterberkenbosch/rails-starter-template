@@ -1929,10 +1929,10 @@ postcss-nested@5.0.6:
   dependencies:
     postcss-selector-parser "^6.0.6"
 
-postcss-nesting@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-8.0.1.tgz#4a8ab3c540a0f138fd3f5d2ee65e4a24d1888024"
-  integrity sha512-cHPNhW5VvRQjszFDxmy16mis9qFQqQLBNw6KVmueLqqE3M182ZAk9+QoxGqbGVryzLVhannw2B5Yhosqq522fA==
+postcss-nesting@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-9.0.0.tgz#27f4e3c77b384915183651c8628accc9df63d745"
+  integrity sha512-DfyKp9OX2z6mKP/9KWa4k6vMyA7Z+n97tY6ZS905H7VyQgaQ8WVpQjYd+tMN4uZHwHZueG+W8mApFabGYkEwzg==
 
 postcss-reporter@^7.0.0:
   version "7.0.3"
