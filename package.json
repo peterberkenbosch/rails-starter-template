@@ -13,7 +13,7 @@
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "postcss-import": "^14.0.2",
-    "postcss-nesting": "^8.0.1",
+    "postcss-nesting": "^9.0.0",
     "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
