@@ -1,11 +1,11 @@
-# APP NAME
+# Rails starter template
 
 Opiniated webpacker-less Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
 Using jsbundling-rails for javacript, and TailwindCSS through PostCSS with cssbundling-rails. For easy loading of all stimulus controllers
-we use esbuild-rails as well.
+we use esbuild-rails.
 
-This comes with a full docker setup for local development including system specs that can run on M1 Apple Docker instances (and also without docker).
+This comes with a full docker setup for local development including a full RSpec suite that can run on M1 Apple Docker instances (and also without docker).
 
 ## TL;DR
 
