@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/rails/cssbundling-rails.git
-  revision: 15e5ccbb0473724d74783224c6d4471e122a2a50
+  revision: 4ed127624bba74e4cdb51c799380eaaa63ced64d
   specs:
     cssbundling-rails (0.2.4)
       railties (>= 6.0.0)
 
 GIT
   remote: https://github.com/rails/jsbundling-rails.git
-  revision: 8b4d2a95bc4bf5c5d590813242ac8f0aee0567fc
+  revision: 95e6b15d02153e852712212c666af17a45f45d15
   specs:
     jsbundling-rails (0.1.9)
       railties (>= 6.0.0)
@@ -120,7 +120,7 @@ GEM
       rails (>= 6.0.0)
       stimulus-rails
       turbo-rails
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
@@ -214,7 +214,7 @@ GEM
       rspec-expectations (~> 3.10)
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
-    rspec-support (3.10.2)
+    rspec-support (3.10.3)
     rubocop (1.22.3)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
@@ -224,7 +224,7 @@ GEM
       rubocop-ast (>= 1.12.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.12.0)
+    rubocop-ast (1.13.0)
       parser (>= 3.0.1.1)
     rubocop-performance (1.11.5)
       rubocop (>= 1.7.0, < 2.0)
@@ -259,7 +259,7 @@ GEM
     standard (1.4.0)
       rubocop (= 1.22.3)
       rubocop-performance (= 1.11.5)
-    stimulus-rails (0.7.1)
+    stimulus-rails (0.7.2)
       rails (>= 6.0.0)
     strong_migrations (0.7.8)
       activerecord (>= 5)
