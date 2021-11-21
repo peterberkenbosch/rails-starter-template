@@ -1,18 +1,4 @@
 GIT
-  remote: https://github.com/rails/cssbundling-rails.git
-  revision: 4ed127624bba74e4cdb51c799380eaaa63ced64d
-  specs:
-    cssbundling-rails (0.2.4)
-      railties (>= 6.0.0)
-
-GIT
-  remote: https://github.com/rails/jsbundling-rails.git
-  revision: 95e6b15d02153e852712212c666af17a45f45d15
-  specs:
-    jsbundling-rails (0.1.9)
-      railties (>= 6.0.0)
-
-GIT
   remote: https://github.com/rubysec/bundler-audit.git
   revision: f64883a878d172722164495668ff205c21eb55c3
   specs:
@@ -106,6 +92,8 @@ GEM
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     crass (1.0.6)
+    cssbundling-rails (0.2.6)
+      railties (>= 6.0.0)
     diff-lcs (1.4.4)
     erubi (1.10.0)
     factory_bot (6.2.0)
@@ -113,7 +101,6 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
     hotwire-rails (0.1.3)
@@ -124,6 +111,8 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.3)
       activesupport (>= 5.0.0)
+    jsbundling-rails (0.2.1)
+      railties (>= 6.0.0)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.7.0)
@@ -147,6 +136,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    nokogiri (1.12.5-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
@@ -232,16 +223,6 @@ GEM
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     selenium-webdriver (4.0.3)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -253,9 +234,9 @@ GEM
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.2)
-      actionpack (>= 4.0)
-      activesupport (>= 4.0)
+    sprockets-rails (3.4.0)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     standard (1.4.0)
       rubocop (= 1.22.3)
@@ -265,7 +246,6 @@ GEM
     strong_migrations (0.7.8)
       activerecord (>= 5)
     thor (1.1.0)
-    tilt (2.0.10)
     turbo-rails (0.8.3)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
@@ -289,6 +269,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  arm64-darwin-21
   x86_64-darwin-20
   x86_64-linux
 
@@ -298,11 +279,11 @@ DEPENDENCIES
   bundler-audit!
   byebug
   capybara (>= 2.15)
-  cssbundling-rails!
+  cssbundling-rails
   factory_bot_rails
   hotwire-rails
   jbuilder (~> 2.11)
-  jsbundling-rails!
+  jsbundling-rails
   letter_opener_web (~> 2.0)
   pg (~> 1.1)
   pry-rails
@@ -310,7 +291,6 @@ DEPENDENCIES
   rails (~> 6.1.4)
   redis (~> 4.0)
   rspec-rails
-  sass-rails (>= 6)
   selenium-webdriver
   sidekiq
   standard
@@ -323,4 +303,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.30
+   2.2.31
