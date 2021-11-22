@@ -9,8 +9,6 @@ gem "rails", "~> 6.1.4"
 gem "pg", "~> 1.1"
 # Use Puma as the app server
 gem "puma", "~> 5.5"
-# Use SCSS for stylesheets
-gem "sass-rails", ">= 6"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.11"
 # Use Redis adapter to run Action Cable in production
@@ -55,6 +53,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "strong_migrations"
 gem "hotwire-rails"
-gem "cssbundling-rails", github: "rails/cssbundling-rails"
-gem "jsbundling-rails", github: "rails/jsbundling-rails"
+gem "cssbundling-rails"
+gem "jsbundling-rails"
 gem "sidekiq"
