@@ -42,21 +42,21 @@ jobs:
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
           yarn install --frozen-lockfile
-      
+
       - name: Standardrb Check
         run: bundle exec standardrb
-      
+
       - name: StandardJs Check
         run: yarn standard
 
       - name: Brakeman Check
         run: bundle exec brakeman
-      
+
       - name: Bundler Audit
         run: |
           bundle exec bundle-audit update
-          bundle exec bundle-audit check      
-      
+          bundle exec bundle-audit check
+
       - name: RSpec
         env:
           DATABASE_URL: postgres://postgres:password@localhost:5432/test
@@ -64,6 +64,6 @@ jobs:
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
           PG_USER: postgres
-        run: |          
+        run: |
           bin/rails db:test:prepare
           bin/rake
