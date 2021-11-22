@@ -29,7 +29,7 @@ interaction:
     description: Run Rake commands
     service: rails
     command: bundle exec rake
-  
+
   yarn:
     service: rails
     command: yarn
@@ -63,8 +63,8 @@ interaction:
   standard:
     description: Run StandardRb commands
     service: rails
-    command: bundle exec standardrb  
-  
+    command: bundle exec standardrb
+
   psql:
     description: Run the psql CLI on the dev database
     service: postgres
@@ -82,6 +82,6 @@ provision:
   - dip rails db:create
   - dip rails db:environment:set RAILS_ENV=development
   - dip rails db:setup SAFETY_ASSURED=1
-  - dip compose up -d sidekiq
   - dip yarn install
   - dip rails db:test:prepare RAILS_ENV=test
+  - dip compose up -d sidekiq
