@@ -1,18 +1,17 @@
 module.exports = {
-  mode: 'jit',
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms')({ strategy: 'class' }),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp')
   ],
 
-  purge: [
+  content: [
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
     './app/views/**/*.erb'
   ],
 
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {}
   },
