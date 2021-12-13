@@ -1848,12 +1848,12 @@ postcss-nested@5.0.6:
   dependencies:
     postcss-selector-parser "^6.0.6"
 
-postcss-nesting@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.0.2.tgz#0cf9e81712fe7b6c3005e7d884cce2cb0a06326e"
-  integrity sha512-FdecapAKIe+kp6uLNW7icw1g1B2HRhAAfsNv/TPzopeM08gpUbnBpqKSVqxrCqLDwzQG854ZJn5I0BiJ35WvmA==
+postcss-nesting@^10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.0.3.tgz#f19288ad07ef5ee47eb86991580b5d7b16a7f5ca"
+  integrity sha512-Dshtj57d5ytK1AeVNpQHp8gINgdjsRJaRjH1QmJHGcfOQIP4TNtlrrrh5o3i3bBTwge2+nh1D9xbI2wrckz5Xw==
   dependencies:
-    postcss-selector-parser "6.0.6"
+    postcss-selector-parser "^6.0.7"
 
 postcss-reporter@^7.0.0:
   version "7.0.3"
@@ -1867,15 +1867,7 @@ postcss-reporter@^7.0.0:
     lodash.sortby "^4.7.0"
     nanocolors "^0.2.6"
 
-postcss-selector-parser@6.0.6:
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.6.tgz#2c5bba8174ac2f6981ab631a42ab0ee54af332ea"
-  integrity sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==
-  dependencies:
-    cssesc "^3.0.0"
-    util-deprecate "^1.0.2"
-
-postcss-selector-parser@^6.0.6:
+postcss-selector-parser@^6.0.6, postcss-selector-parser@^6.0.7:
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.7.tgz#48404830a635113a71fd79397de8209ed05a66fc"
   integrity sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==
