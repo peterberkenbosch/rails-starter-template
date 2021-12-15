@@ -111,7 +111,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.3)
       activesupport (>= 5.0.0)
-    jsbundling-rails (0.2.2)
+    jsbundling-rails (1.0.0)
       railties (>= 6.0.0)
     launchy (2.5.0)
       addressable (~> 2.7)
@@ -303,4 +303,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.31
+   2.2.33
