@@ -7,7 +7,7 @@ we use esbuild-rails.
 
 You need the following installed:
 
-* Ruby 3.0.2
+* Ruby 3.0.3
 * Bundler (`gem install bundler`)
 * Node (`brew install node`)
 * Yarn (`brew install yarn`)
