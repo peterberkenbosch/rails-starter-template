@@ -13,7 +13,7 @@ x-app: &app
   environment: &env
     NODE_ENV: ${NODE_ENV:-development}
     RAILS_ENV: ${RAILS_ENV:-development}
-  image: x-app-dev:4.0.2
+  image: x-app-dev:5.0.0
   tmpfs:
     - /tmp
 

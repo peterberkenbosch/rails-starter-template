@@ -1,2 +1,5 @@
 vim
 shared-mime-info
+pkg-config
+libglib2.0-dev
+libexpat1-dev
