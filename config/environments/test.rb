@@ -8,6 +8,7 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Turn false under Spring and add config.action_view.cache_template_loading = true
   config.cache_classes = true
 
   # Do not eager load code on boot. This avoids loading your whole application
@@ -56,7 +57,4 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
-
-  # Set a css_compressor so sassc-rails does not overwrite the compressor when running the tests
-  config.assets.css_compressor = nil
 end
