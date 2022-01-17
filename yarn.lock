@@ -1980,10 +1980,10 @@ postcss-nested@5.0.6:
   dependencies:
     postcss-selector-parser "^6.0.6"
 
-postcss-nesting@^10.1.1:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.1.1.tgz#d5574e69f66b9f44f73143ce1e161d32b917df87"
-  integrity sha512-Hs1pziyg47PBphISBWsCuSDeyNrk8xItFvT2r8F4L35Mcq0uQmz1yt+o/oq6oYkVAUlXadRXf4qH97wLKKznbA==
+postcss-nesting@^10.1.2:
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-10.1.2.tgz#2e5f811b3d75602ea18a95dd445bde5297145141"
+  integrity sha512-dJGmgmsvpzKoVMtDMQQG/T6FSqs6kDtUDirIfl4KnjMCiY9/ETX8jdKyCd20swSRAbUYkaBKV20pxkzxoOXLqQ==
   dependencies:
     postcss-selector-parser "^6.0.8"
 
