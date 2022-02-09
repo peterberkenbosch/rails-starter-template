@@ -45,7 +45,7 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 # Use Active Storage variant
 gem "image_processing", ">= 1.2"
 
-gem "strong_migrations"
+gem "strong_migrations", github: "ankane/strong_migrations"
 gem "sidekiq"
 
 group :development, :test do

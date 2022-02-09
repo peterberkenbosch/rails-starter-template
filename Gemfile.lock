@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/ankane/strong_migrations.git
+  revision: 3b24e2a78047832e65926563e12594bcb80afa23
+  specs:
+    strong_migrations (0.7.9)
+      activerecord (>= 5.2)
+
+GIT
   remote: https://github.com/peterberkenbosch/annotate_models.git
   revision: 49cb4ec2e07c7d1a64109b1882e8a874574d250f
   branch: rails-7-support
@@ -281,8 +288,6 @@ GEM
       rubocop-performance (= 1.13.2)
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
-    strong_migrations (0.7.9)
-      activerecord (>= 5)
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
@@ -337,7 +342,7 @@ DEPENDENCIES
   sprockets-rails (>= 2.0.0)
   standard
   stimulus-rails (>= 1.0.0)
-  strong_migrations
+  strong_migrations!
   turbo-rails (>= 1.0.0)
   tzinfo-data
   web-console (>= 4.1.0)
