@@ -6,15 +6,6 @@ GIT
       activerecord (>= 5.2)
 
 GIT
-  remote: https://github.com/peterberkenbosch/annotate_models.git
-  revision: 49cb4ec2e07c7d1a64109b1882e8a874574d250f
-  branch: rails-7-support
-  specs:
-    annotate (3.1.1)
-      activerecord (>= 3.2, < 7.1)
-      rake (>= 10.4, < 14.0)
-
-GIT
   remote: https://github.com/rubysec/bundler-audit.git
   revision: 245a2b6a8fbf1d40d6e18ef6d40b1e83a684b984
   specs:
@@ -92,6 +83,9 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     ast (2.4.2)
     bindex (0.8.1)
     brakeman (5.2.1)
@@ -320,7 +314,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  annotate!
+  annotate
   brakeman
   bundler-audit!
   capybara (>= 3.26)
