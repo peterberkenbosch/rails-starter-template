@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/ankane/strong_migrations.git
-  revision: 14e525876c9d0fdf12d84440bb78bca5b1bea1af
-  specs:
-    strong_migrations (0.8.0)
-      activerecord (>= 5.2)
-
-GIT
   remote: https://github.com/rubysec/bundler-audit.git
   revision: 245a2b6a8fbf1d40d6e18ef6d40b1e83a684b984
   specs:
@@ -253,7 +246,7 @@ GEM
       rubocop-ast (>= 1.15.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
-    rubocop-ast (1.15.1)
+    rubocop-ast (1.15.2)
       parser (>= 3.0.1.1)
     rubocop-performance (1.13.2)
       rubocop (>= 1.7.0, < 2.0)
@@ -282,6 +275,8 @@ GEM
       rubocop-performance (= 1.13.2)
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
+    strong_migrations (0.8.0)
+      activerecord (>= 5.2)
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
@@ -336,7 +331,7 @@ DEPENDENCIES
   sprockets-rails (>= 2.0.0)
   standard
   stimulus-rails (>= 1.0.0)
-  strong_migrations!
+  strong_migrations
   turbo-rails (>= 1.0.0)
   tzinfo-data
   web-console (>= 4.1.0)
