@@ -273,7 +273,7 @@ GEM
     standard (1.7.2)
       rubocop (= 1.25.1)
       rubocop-performance (= 1.13.2)
-    stimulus-rails (1.0.2)
+    stimulus-rails (1.0.3)
       railties (>= 6.0.0)
     strong_migrations (0.8.0)
       activerecord (>= 5.2)
