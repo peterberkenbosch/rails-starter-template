@@ -2,7 +2,7 @@
 
 Opiniated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
-Using jsbundling-rails for javacript, and TailwindCSS through PostCSS with cssbundling-rails. For easy loading of all stimulus controllers
+Using jsbundling-rails for Javascript, and TailwindCSS through PostCSS with cssbundling-rails. For easy loading of all Stimulus controllers
 we use esbuild-rails.
 
 You need the following installed:
