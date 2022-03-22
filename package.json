@@ -15,7 +15,7 @@
     "babel-eslint": "^10.1.0",
     "esbuild": "^0.14.26",
     "esbuild-rails": "^1.0.3",
-    "postcss": "^8.4.8",
+    "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "postcss-nesting": "^10.1.3",
