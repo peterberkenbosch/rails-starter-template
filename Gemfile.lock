@@ -81,7 +81,7 @@ GEM
       rake (>= 10.4, < 14.0)
     ast (2.4.2)
     bindex (0.8.1)
-    brakeman (5.2.1)
+    brakeman (5.2.2)
     builder (3.2.4)
     capybara (3.36.0)
       addressable
