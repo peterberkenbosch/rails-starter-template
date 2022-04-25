@@ -22,7 +22,7 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
-    "standard": "^16.0.4"
+    "standard": "^17.0.0"
   },
   "standard": {
     "parser": "babel-eslint"
