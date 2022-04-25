@@ -24,9 +24,6 @@
   "devDependencies": {
     "standard": "^17.0.0"
   },
-  "standard": {
-    "parser": "babel-eslint"
-  },
   "scripts": {
     "standard": "standard",
     "build": "node esbuild.config.js",

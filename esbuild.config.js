@@ -13,6 +13,6 @@ require('esbuild').build({
   bundle: true,
   outdir: path.join(process.cwd(), 'app/assets/builds'),
   absWorkingDir: path.join(process.cwd(), 'app/javascript'),
-  watch: watch,
+  watch,
   plugins: [rails()]
 }).catch(() => process.exit(1))
