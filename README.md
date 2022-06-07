@@ -48,10 +48,10 @@ Will run Overmind (or Foreman if Overmind is not installed), builds all assets a
 $ bin/dev
 ```
 
-When using dip & overmind:
+When using dip:
 
 ```
-$ overmind s -f Procfile.dip.dev
+$ dip up web
 ```
 
 ## Code Guidelines
@@ -81,6 +81,8 @@ $ yarn standard --fix
 ```
 
 ## Running the specs
+
+Inspired by [Evil Martians - System of a Test article](https://evilmartians.com/chronicles/system-of-a-test-setting-up-end-to-end-rails-testing)
 
 To run all the specs you can run:
 

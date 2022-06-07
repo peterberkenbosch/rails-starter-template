@@ -1,0 +1,142 @@
+x-app: &app
+  build:
+    context: .
+    args:
+      RUBY_VERSION: '3.1.2'
+      PG_MAJOR: '14'
+      NODE_MAJOR: '16'
+  environment: &env
+    NODE_ENV: ${NODE_ENV:-development}
+    RAILS_ENV: ${RAILS_ENV:-development}
+  image: x-app-dev:6.0.0
+  tmpfs:
+    - /tmp
+    - /app/tmp/pids
+
+x-backend: &backend
+  <<: *app
+  stdin_open: true
+  tty: true
+  volumes:
+    - ..:/app:cached
+    - rails_cache:/app/tmp/cache
+    - bundle:/usr/local/bundle
+    - node_modules:/app/node_modules
+    - assets:/app/public/assets
+    - assets_builds:/app/assets/builds
+    - history:/usr/local/hist
+    - ./.psqlrc:/root/.psqlrc:ro
+    - ./.bashrc:/root/.bashrc:ro
+    - ./.pryrc:/root/.pryrc:ro
+  environment: &backend_environment
+    <<: *env
+    REDIS_URL: redis://redis:6379/
+    DATABASE_URL: postgres://postgres:postgres@postgres:5432
+    BOOTSNAP_CACHE_DIR: /usr/local/bundle/_bootsnap
+    WEB_CONCURRENCY: 1
+    HISTFILE: /usr/local/hist/.bash_history
+    PSQL_HISTFILE: /usr/local/hist/.psql_history
+    IRB_HISTFILE: /usr/local/hist/.irb_history
+    CHROME_URL: http://chrome:3333
+    EDITOR: vi
+    LOG: ${LOG:-0}
+  depends_on: &backend_depends_on
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  rails:
+    <<: *backend
+    command: bundle exec rails
+
+  web:
+    <<: *backend
+    command: bundle exec rails server -b 0.0.0.0
+    ports:
+      - '3000:3000'
+    depends_on:
+      <<: *backend_depends_on
+      css:
+        condition: service_started
+      js:
+        condition: service_started
+
+  # Separate definition for system tests to add Chrome as a dependency
+  rspec_system:
+    <<: *backend
+    ports:
+      - '3000:3000'
+      - '50051'
+    environment:
+      <<: *backend_environment
+      APP_HOST: app.test
+    depends_on:
+      <<: *backend_depends_on
+      chrome:
+        condition: service_started
+    networks:
+      default:
+        aliases:
+          - app.test
+
+  css:
+    <<: *backend
+    command: yarn build:css --watch
+
+  js:
+    <<: *backend
+    command: yarn build --watch
+
+  sidekiq:
+    <<: *backend
+    command: bundle exec sidekiq -C config/sidekiq.yml
+
+  postgres:
+    image: postgres:14-alpine
+    volumes:
+      - .psqlrc:/root/.psqlrc:ro
+      - postgres:/var/lib/postgresql/data
+      - history:/user/local/hist
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PSQL_HISTFILE: /user/local/hist/.psql_history
+    ports:
+      - 5432
+    healthcheck:
+      test: pg_isready -U postgres -h 127.0.0.1
+      interval: 5s
+
+  redis:
+    image: redis:6.2-alpine
+    volumes:
+      - redis:/data
+    ports:
+      - 6379
+    healthcheck:
+      test: redis-cli ping
+      interval: 1s
+      timeout: 3s
+      retries: 30
+
+  chrome:
+    # Works on Apple M1
+    image: barrenechea/browserless:latest
+    ports:
+      - '3333:3333'
+    environment:
+      PORT: 3333
+      # Set connection timeout for debugging
+      # https://docs.browserless.io/docs/docker.html#connection-timeout
+      CONNECTION_TIMEOUT: 600000
+
+volumes:
+  postgres:
+  redis:
+  bundle:
+  node_modules:
+  rails_cache:
+  history:
+  assets:
+  assets_builds:
