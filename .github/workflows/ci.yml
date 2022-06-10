@@ -57,8 +57,15 @@ jobs:
           bundle exec bundle-audit update
           bundle exec bundle-audit check
 
+      - name: Setup Code Climate test-reporter
+        run: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+
       - name: RSpec
         env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
           DATABASE_URL: postgres://postgres:password@localhost:5432/test
           REDIS_URL: redis://localhost:6379/0
           RAILS_ENV: test
@@ -67,3 +74,8 @@ jobs:
         run: |
           bin/rails db:test:prepare
           bin/rake
+
+      - name: Publish code coverage
+        run: |
+          export GIT_BRANCH="${GITHUB_REF/refs\/heads\//}"
+          ./cc-test-reporter after-build -r ${{secrets.CC_TEST_REPORTER_ID}}

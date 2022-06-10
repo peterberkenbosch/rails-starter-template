@@ -66,6 +66,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", ">= 3.26"
   gem "cuprite"
+  gem "simplecov", require: false
 end
 
 group :development do
