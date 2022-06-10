@@ -1,5 +1,8 @@
 # Rails starter template
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/1600dfceb82cea156f2f/maintainability)](https://codeclimate.com/github/peterberkenbosch/rails-starter-template/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1600dfceb82cea156f2f/test_coverage)](https://codeclimate.com/github/peterberkenbosch/rails-starter-template/test_coverage)
+
 Opiniated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
 Using jsbundling-rails for Javascript, and TailwindCSS through PostCSS with cssbundling-rails. For easy loading of all Stimulus controllers
