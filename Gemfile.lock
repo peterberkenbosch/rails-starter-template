@@ -283,7 +283,7 @@ GEM
       rubocop-performance (= 1.13.3)
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
-    strong_migrations (1.0.0)
+    strong_migrations (1.2.0)
       activerecord (>= 5.2)
     strscan (3.0.3)
     thor (1.2.1)
