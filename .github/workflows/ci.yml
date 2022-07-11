@@ -57,6 +57,9 @@ jobs:
           bundle exec bundle-audit update
           bundle exec bundle-audit check
 
+      - name: Zeitwerk eager load check
+        run: bundle exec rails zeitwerk:check
+
       - name: Setup Code Climate test-reporter
         run: |
           curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
