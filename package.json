@@ -12,7 +12,7 @@
     "@tailwindcss/line-clamp": "^0.4.0",
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.7",
-    "esbuild": "^0.14.53",
+    "esbuild": "^0.15.3",
     "esbuild-rails": "^1.0.3",
     "postcss": "^8.4.16",
     "postcss-cli": "^10.0.0",
