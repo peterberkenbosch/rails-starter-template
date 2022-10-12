@@ -21,7 +21,7 @@ Capybara.default_max_wait_time = 2
 Capybara.default_normalize_ws = true
 
 # Where to store artifacts (e.g. screenshots, downloaded files, etc.)
-Capybara.save_path = ENV.fetch("CAPYBARA_ARTIFACTS", "./tmp/capybara")
+Capybara.save_path = File.expand_path(ENV.fetch("CAPYBARA_ARTIFACTS", "./tmp/capybara"))
 
 Capybara.singleton_class.prepend(Module.new do
   attr_accessor :last_used_session
