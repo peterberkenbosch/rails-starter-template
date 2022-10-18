@@ -13,7 +13,7 @@ gem "sprockets-rails", ">= 2.0.0"
 gem "pg", "~> 1.4"
 
 # Use Puma as the app server
-gem "puma", "~> 5.6"
+gem "puma", "~> 6"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails", ">= 1.0.0"
@@ -64,7 +64,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", ">= 3.26"
+  gem "capybara", github: "teamcapybara/capybara"
   gem "cuprite"
   gem "simplecov", require: false
 end
