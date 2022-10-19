@@ -175,13 +175,13 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8-aarch64-linux)
+    nokogiri (1.13.9-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.13.8-arm64-darwin)
+    nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
+    nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.1)
@@ -336,6 +336,7 @@ DEPENDENCIES
   jbuilder (~> 2.11)
   jsbundling-rails (>= 1.0.0)
   letter_opener_web (~> 2.0)
+  nokogiri (>= 1.13.9)
   pg (~> 1.4)
   pry-rails
   puma (~> 6)
