@@ -336,6 +336,7 @@ DEPENDENCIES
   jbuilder (~> 2.11)
   jsbundling-rails (>= 1.0.0)
   letter_opener_web (~> 2.0)
+  nokogiri (>= 1.13.9)
   pg (~> 1.4)
   pry-rails
   puma (~> 6)
