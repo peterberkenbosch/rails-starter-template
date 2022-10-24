@@ -18,6 +18,8 @@ You need the following installed:
 * Postgresql (`brew install postgresql` start with: `brew services start postgresql`)
 * Redis (`brew install redis` start with: `brew services start redis`)
 
+If you are using [asdf](https://asdf-vm.com/) you can install the required Ruby and NodeJS versions as well with `asdf install`
+
 Optional: [Docker](https://docs.docker.com/engine/installation/mac/) to use with the preconfigured `dip.yml` to setup a dockerized dev environment using [dip](https://github.com/bibendi/dip)
 
 ## Getting started
