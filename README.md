@@ -10,15 +10,23 @@ we use esbuild-rails.
 
 You need the following installed:
 
-* Ruby >= 3
+* Ruby >= 3 (`asdf install`)
+* Node 19 (`asdf install`)
 * Bundler (`gem install bundler`)
-* Node (`brew install node`)
 * Yarn (`brew install yarn`)
 * Overmind (`brew install tmux overmind`)
 * Postgresql (`brew install postgresql` start with: `brew services start postgresql`)
 * Redis (`brew install redis` start with: `brew services start redis`)
 
-If you are using [asdf](https://asdf-vm.com/) you can install the required Ruby and NodeJS versions as well with `asdf install`
+If you are using [asdf](https://asdf-vm.com/) (I recommend that you do :) ) you can install the required Ruby and NodeJS versions with `asdf install`
+
+The Homebrew dependencies can be installed with running:
+
+```bash
+brew bundle install --no-upgrade
+```
+
+Additional Homebrew dependencies can be added to the `Brewfile`
 
 Optional: [Docker](https://docs.docker.com/engine/installation/mac/) to use with the preconfigured `dip.yml` to setup a dockerized dev environment using [dip](https://github.com/bibendi/dip)
 
