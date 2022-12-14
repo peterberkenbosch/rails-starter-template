@@ -49,6 +49,7 @@ gem "strong_migrations"
 gem "sidekiq"
 
 gem "nokogiri", ">= 1.13.9"
+gem "rails-html-sanitizer", ">= 1.4.4"
 
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
