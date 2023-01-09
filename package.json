@@ -14,7 +14,7 @@
     "autoprefixer": "^10.4.13",
     "esbuild": "^0.16.12",
     "esbuild-rails": "^1.0.3",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^10.2.0",
