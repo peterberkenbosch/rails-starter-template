@@ -159,7 +159,7 @@ GEM
     method_source (1.0.0)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    minitest (5.16.3)
+    minitest (5.17.0)
     net-imap (0.3.1)
       net-protocol
     net-pop (0.1.2)
@@ -288,7 +288,7 @@ GEM
       rubocop-performance (= 1.15.2)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
-    strong_migrations (1.4.0)
+    strong_migrations (1.4.1)
       activerecord (>= 5.2)
     thor (1.2.1)
     timeout (0.3.0)
