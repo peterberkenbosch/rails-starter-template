@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/teamcapybara/capybara.git
-  revision: 631f3ead1d51373cba897f4198fe2e6bafef035c
+  revision: 69abf9e24cc225aca1ef7e25b1bfb7b61017f017
   specs:
     capybara (3.38.0)
       addressable
