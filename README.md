@@ -1,5 +1,10 @@
 # Rails starter template
 
+![rspec](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/rspec)
+![standard](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/standard)
+![brakeman](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/brakeman)
+![bundler_audit](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/bundler_audit)
+
 Opinionated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
 Using jsbundling-rails for Javascript, and TailwindCSS through PostCSS with cssbundling-rails. For easy loading of all Stimulus controllers
