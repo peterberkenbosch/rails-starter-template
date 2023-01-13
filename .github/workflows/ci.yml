@@ -9,7 +9,7 @@ on:
       - main
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     services:
       postgres:
         image: postgres:14
@@ -30,10 +30,10 @@ jobs:
           bundler: default
           bundler-cache: true
 
-      - name: Setup Node 16
+      - name: Setup Node 19
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 19.x
 
       - name: Install dependencies
         run: |
