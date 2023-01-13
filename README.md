@@ -1,7 +1,9 @@
 # Rails starter template
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/1600dfceb82cea156f2f/maintainability)](https://codeclimate.com/github/peterberkenbosch/rails-starter-template/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1600dfceb82cea156f2f/test_coverage)](https://codeclimate.com/github/peterberkenbosch/rails-starter-template/test_coverage)
+![rspec](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/rspec)
+![standard](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/standard)
+![brakeman](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/brakeman)
+![bundler_audit](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/bundler_audit)
 
 Opinionated Rails setup with the latest Rails, using PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
