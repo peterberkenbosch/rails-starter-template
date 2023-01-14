@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: Setup Ruby 3.0
+      - name: Setup Ruby 3.2
         uses: ruby/setup-ruby@v1
         with:
           bundler: default
