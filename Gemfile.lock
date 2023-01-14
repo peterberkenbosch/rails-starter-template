@@ -181,6 +181,11 @@ GEM
     parser (3.2.0.0)
       ast (~> 2.4.1)
     pg (1.4.5)
+    propshaft (0.6.4)
+      actionpack (>= 7.0.0)
+      activesupport (>= 7.0.0)
+      rack
+      railties (>= 7.0.0)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -273,13 +278,6 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sprockets (4.2.0)
-      concurrent-ruby (~> 1.0)
-      rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
-      sprockets (>= 3.0.0)
     standard (1.21.1)
       language_server-protocol (~> 3.17.0.2)
       rubocop (= 1.42.0)
@@ -332,6 +330,7 @@ DEPENDENCIES
   letter_opener_web (~> 2.0)
   nokogiri (>= 1.13.9)
   pg (~> 1.4)
+  propshaft
   pry-rails
   puma (~> 6)
   rails (~> 7.0.4)
@@ -339,7 +338,6 @@ DEPENDENCIES
   rspec-rails
   sidekiq
   simplecov
-  sprockets-rails (>= 2.0.0)
   standard
   stimulus-rails (>= 1.0.0)
   strong_migrations
