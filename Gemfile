@@ -6,8 +6,8 @@ ruby "~> 3"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem "rails", "~> 7.0.4"
 
-# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
-gem "propshaft"
+# The traditional bundling and transpiling asset pipeline for Rails.
+gem "sprockets-rails", ">= 2.0.0"
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.4"
@@ -77,6 +77,4 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   # gem 'rack-mini-profiler', '~> 2.0'
-
-  gem "listen"
 end
