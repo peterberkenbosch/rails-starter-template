@@ -7,7 +7,9 @@
 
 Opinionated Rails setup using Rails 7, PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
-We are bundling JavaScript and CSS through a Node-based setup with [`jsbundling-rails`](https://github.com/rails/jsbundling-rails) and [`cssbundling-rails`](https://github.com/rails/cssbundling-rails) and for the asset pipeline we are using [`propshaft`](https://github.com/rails/propshaft).
+We are bundling JavaScript and CSS through a Node-based setup with [`jsbundling-rails`](https://github.com/rails/jsbundling-rails) and [`cssbundling-rails`](https://github.com/rails/cssbundling-rails).
+
+If you want to run [`propshaft`](https://github.com/rails/propshaft) as the asset pipeline you can use this branch: https://github.com/peterberkenbosch/rails-starter-template/tree/propshaft. The main branch will be using Sprockets for the time being.
 
 You need the following installed:
 
