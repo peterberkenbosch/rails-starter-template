@@ -12,7 +12,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.13",
-    "esbuild": "^0.16.16",
+    "esbuild": "^0.17.0",
     "esbuild-rails": "^1.0.3",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "standard": "standard",
-    "build": "node esbuild.config.js",
+    "build": "node esbuild.config.mjs",
     "build:css": "tailwindcss --postcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
   }
 }
