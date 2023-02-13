@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: https://github.com/teamcapybara/capybara.git
-  revision: 69abf9e24cc225aca1ef7e25b1bfb7b61017f017
+  revision: 3883ded97d4466d716942b1308763a115f3f73a4
   specs:
     capybara (3.38.0)
       addressable
@@ -230,7 +230,7 @@ GEM
       redis-client (>= 0.9.0)
     redis-client (0.12.1)
       connection_pool
-    regexp_parser (2.6.2)
+    regexp_parser (2.7.0)
     reline (0.3.2)
       io-console (~> 0.5)
     rexml (3.2.5)
