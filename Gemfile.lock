@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rubysec/bundler-audit.git
-  revision: c1d2fedd66d62275162c36d97115f5a484856e54
+  revision: bc041d13eeccab70dd01672c097e8906108d07e3
   specs:
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
