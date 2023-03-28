@@ -1,0 +1,12 @@
+# .rubyci/config.yml
+
+version: 1
+
+build_packs:
+  rails: {}
+  node_js:
+    # Available versions: [12..17]
+    version: 16
+  postgresql:
+    # Available versions: [9..14]
+    version: 14
