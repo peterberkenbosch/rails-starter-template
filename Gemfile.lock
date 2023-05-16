@@ -8,9 +8,9 @@ GIT
 
 GIT
   remote: https://github.com/teamcapybara/capybara.git
-  revision: c2760553376ad3a76be7b50e87a2eef43a031755
+  revision: b211300c1656b7d1f7eb61e274609768a4c5779f
   specs:
-    capybara (3.39.0)
+    capybara (3.39.1)
       addressable
       matrix
       mini_mime (>= 0.1.3)
