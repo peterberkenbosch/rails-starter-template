@@ -48,7 +48,7 @@ gem "image_processing", ">= 1.2"
 gem "strong_migrations"
 gem "sidekiq"
 
-gem "nokogiri", ">= 1.13.9"
+gem "nokogiri", ">= 1.14.2"
 
 group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
