@@ -21,7 +21,7 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "standard": "^17.0.0"
+    "standard": "^17.1.0"
   },
   "scripts": {
     "standard": "standard",
