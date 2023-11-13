@@ -4,7 +4,7 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^7.3.0",
-    "@rails/actioncable": "^7.1.1",
+    "@rails/actioncable": "^7.1.2",
     "@rails/activestorage": "^7.1.1",
     "@rails/request.js": "^0.0.9",
     "@tailwindcss/aspect-ratio": "^0.4.2",
