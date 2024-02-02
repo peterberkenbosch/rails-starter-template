@@ -33,12 +33,10 @@ require "capybara/cuprite"
 Capybara.register_driver(:better_cuprite) do |app|
   Capybara::Cuprite::Driver.new(
     app,
-    **{
-      window_size: [1200, 800],
-      browser_options: remote_chrome ? {"no-sandbox" => nil} : {},
-      inspector: true,
-      timeout: 60
-    }.merge(remote_options)
+    window_size: [1200, 800],
+    browser_options: remote_chrome ? {"no-sandbox" => nil} : {},
+    inspector: true,
+    timeout: 60, **remote_options
   )
 end
 
