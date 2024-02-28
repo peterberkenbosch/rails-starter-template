@@ -1,9 +1,9 @@
 # Rails starter template
 
-![rspec](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/rspec)
-![standard](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/standard)
-![brakeman](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/brakeman)
-![bundler_audit](https://ruby.ci/badges/278d4d52-dcc5-4bd2-aa30-25d7845eeef1/bundler_audit)
+## IN MAINTENANCE MODE
+
+### In the last couple of months the Rails landscape changed, and so did my opinionated Rails setup. I will keep this one as maintained as possible, but currently running on edge Rails with just minor changes. Those specifics will be open sourced in the future as well.
+
 
 Opinionated Rails setup using Rails 7, PostgreSQL, TailwindCSS, Stimulus, Hotwire and RSpec.
 
